@@ -25,7 +25,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIImageView *logoImgView = [[UIImageView alloc] initWithFrame:CGRectMake(200, 80, 100, 100)];
-    logoImgView.image = [UIImage imageNamed:@"Logo"];
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"PPGLogin" ofType:@"bundle"]];
+    logoImgView.image = [UIImage imageNamed:@"Logo" inBundle:bundle compatibleWithTraitCollection:nil];
     [self.view addSubview:logoImgView];
     
     UIButton *loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(80, 200, 80, 40)];
@@ -51,7 +52,8 @@
 }
 
 - (void)goRegister {
-    RegisterViewController *registerVC = [RegisterViewController new];
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"PPGLogin" ofType:@"bundle"]];
+    RegisterViewController *registerVC = [[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:bundle];
     [self.navigationController pushViewController:registerVC animated:YES];
 }
 
