@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 Login module for demo,with Register and UserRule.
                    DESC
 
-  spec.homepage     = "http://gaopeng.me/PPG_Login"
+  spec.homepage     = "https://github.com/gaopeng-hz/PPG_Login_Module"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,8 +39,8 @@ Login module for demo,with Register and UserRule.
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # spec.license      = "MIT"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,7 +80,7 @@ Login module for demo,with Register and UserRule.
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://gaopeng.me/PPG_Login.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/gaopeng-hz/PPG_Login_Module.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
