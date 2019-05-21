@@ -52,8 +52,7 @@
 }
 
 - (void)goRegister {
-    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"PPGLogin" ofType:@"bundle"]];
-    RegisterViewController *registerVC = [[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:bundle];
+    RegisterViewController *registerVC = [RegisterViewController new];
     [self.navigationController pushViewController:registerVC animated:YES];
 }
 

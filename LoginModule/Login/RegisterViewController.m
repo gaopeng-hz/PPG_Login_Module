@@ -16,6 +16,16 @@
 
 @implementation RegisterViewController
 
+- (instancetype)init
+{
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"PPGLogin" ofType:@"bundle"]];
+    self = [super initWithNibName:NSStringFromClass(self.class) bundle:bundle];
+    if (self) {
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Register";
