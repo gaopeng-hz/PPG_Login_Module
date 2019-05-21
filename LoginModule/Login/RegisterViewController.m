@@ -9,6 +9,7 @@
 #import "RegisterViewController.h"
 #import "LoginApi.h"
 #import <SVProgressHUD.h>
+#import "PPGLoginMacros.h"
 
 @interface RegisterViewController ()
 
@@ -18,8 +19,7 @@
 
 - (instancetype)init
 {
-    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"PPGLogin" ofType:@"bundle"]];
-    self = [super initWithNibName:NSStringFromClass(self.class) bundle:bundle];
+    self = [super initWithNibName:NSStringFromClass(self.class) bundle:PPG_Login_Bundle];
     if (self) {
         
     }
@@ -32,7 +32,7 @@
 }
 
 - (IBAction)viewUserRule:(id)sender {
-    UIStoryboard *loginSB = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+    UIStoryboard *loginSB = [UIStoryboard storyboardWithName:@"Login" bundle:PPG_Login_Bundle];
     UIViewController *userRoleVC = [loginSB instantiateViewControllerWithIdentifier:@"userRule"];
     [self.navigationController pushViewController:userRoleVC animated:YES];
 }

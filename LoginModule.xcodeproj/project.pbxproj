@@ -51,6 +51,7 @@
 		622F6A082292C44200C5CA28 /* LoginApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginApi.m; sourceTree = "<group>"; };
 		622F6A0A2292D0C500C5CA28 /* PPG_Login.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PPG_Login.podspec; sourceTree = "<group>"; };
 		622F6A0C2293881400C5CA28 /* Login.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Login.xcassets; sourceTree = "<group>"; };
+		622F6A30229397DA00C5CA28 /* PPGLoginMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPGLoginMacros.h; sourceTree = "<group>"; };
 		B860F05571C1FFE06B61193B /* libPods-LoginModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoginModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D455AB682E6039C6B3D0A778 /* Pods-LoginModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginModule.release.xcconfig"; path = "Target Support Files/Pods-LoginModule/Pods-LoginModule.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +124,7 @@
 		622F69F62292B21E00C5CA28 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				622F6A30229397DA00C5CA28 /* PPGLoginMacros.h */,
 				622F69F72292B23B00C5CA28 /* LoginManager.h */,
 				622F69F82292B23B00C5CA28 /* LoginManager.m */,
 				622F69FA2292B27300C5CA28 /* LoginViewController.h */,

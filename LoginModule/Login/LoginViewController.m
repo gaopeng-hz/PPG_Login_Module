@@ -10,6 +10,7 @@
 #import "LoginApi.h"
 #import "RegisterViewController.h"
 #import <SVProgressHUD.h>
+#import "PPGLoginMacros.h"
 
 @interface LoginViewController ()
 
@@ -25,8 +26,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIImageView *logoImgView = [[UIImageView alloc] initWithFrame:CGRectMake(200, 80, 100, 100)];
-    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"PPGLogin" ofType:@"bundle"]];
-    logoImgView.image = [UIImage imageNamed:@"Logo" inBundle:bundle compatibleWithTraitCollection:nil];
+    logoImgView.image = [UIImage imageNamed:@"Logo" inBundle:PPG_Login_Bundle compatibleWithTraitCollection:nil];
     [self.view addSubview:logoImgView];
     
     UIButton *loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(80, 200, 80, 40)];
